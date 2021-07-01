@@ -17,3 +17,20 @@ document.getElementById('resultado-4').innerHTML = divisibleFor7();
 
 // Ejercicio 6
 
+let formatter = {
+    prefix : "Hello",
+    append: function(str){
+        str = `${formatter.prefix} ${str}`;
+        console.log(str);
+        return str;
+    }
+};
+document.getElementById('resultado-6.1').innerHTML = formatter.append("Sonia");
+
+formatter.toLowerString = function(str){
+    str = str.toLowerCase();
+    console.log(str);
+    return str;
+};
+
+document.getElementById('resultado-6.2').innerHTML = formatter.toLowerString("I'm Sonia");
