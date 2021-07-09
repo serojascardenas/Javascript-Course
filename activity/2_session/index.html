@@ -98,15 +98,40 @@ let logbad = new Login(“pepe”, “bad”) // alert -&gt; <span class="hljs-k
                     <button class="custom-button button-cancel" id="loginFailure">Error</button>
                     <button class="custom-button" id="loginSuccessAsync">Login Async</button>
                     <button class="custom-button button-cancel" id="loginFailureAsync">Error Async</button>
+                    <button class="custom-button button-cancel" id="btnExcerciseTwo">Excercise Two</button>
                     <pre>
-<code class="language-javascript">// Ejercicio 1
+<code class="language-javascript">
+// Ejercicio 1
+<p id="resultado-1"></p>
 
 // Ejercicio 2
+En el programa principal, this representa el objeto global.
+<p id="resultado-2.0"></p>
+
+En una función, this representa el objeto global.
+<p id="resultado-2.1"></p>
+
+En una función en modo estricto, this es undefined
+<p id="resultado-2.2"></p>
+
+En un método, this se refiere al objeto propietario.
+<p id="resultado-2.3"></p>
+
+En un método con arrow function, this se refiere al contexto de la función.
+<p id="resultado-2.4"></p>
+
+En un evento, this se refiere al elemento que recibe el evento. Ver botón: Excercise Two
+
+Métodos como call(), bind() o apply(), modifican el valor de this al objeto que enlazan.
+<p id="resultado-2.5"></p>
+<p id="resultado-2.6"></p>
+<p id="resultado-2.7"></p>
 
 // Ejercicio 3
+<p id="resultado-3"></p>
 
 // Ejercicio 4
-
+ 
 // Ejercicio 5
 
 // Ejercicio 6
